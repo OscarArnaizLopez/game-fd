@@ -3,3 +3,6 @@ platforms
 typings
 .vscode/launch.json
 tslint.json
+*.js.map
+app/**/*.js
+hooks/
