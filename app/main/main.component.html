@@ -1,0 +1,32 @@
+<ActionBar title="Game FD" class="action-bar">
+    <ActionItem ios.position="right" text="Reset" android.position="actionBar" (tap)="showDialog({ title: 'Confirm reset', body: 'Are you sure you want to reset the game?' })"></ActionItem>
+
+</ActionBar>
+<DockLayout class="main-container">
+
+    <StackLayout dock="top" class="top-container">
+        <Label text="Who player has better score?" marginTop="30"></Label>
+        <Label text="Place your bet!" marginTop="20"></Label>
+        <StackLayout #playersFrame orientation="horizontal" class="players-frame" marginTop="20">
+            <player *ngFor="let player of players" [player]="player" (checkResult)="checkResult($event)"></player>
+        </StackLayout>
+        <Label text="Well done! You guessed it!" *ngIf="showResult && wonBet" class="resul-lbl"></Label>
+
+        <StackLayout #resetBtn class="rest-btn-frame">
+            <Label text="Sorry! Try it again!" *ngIf="showResult && !wonBet" class="resul-lbl"></Label>
+            <Button text="Play again!" (tap)="resetPlayers()" class="reset-btn" *ngIf="!getOpenToBet()"></Button>
+        </StackLayout>
+    </StackLayout>
+
+    <StackLayout dock="bottom" class="bottom-container" marginLeft="10">
+        <StackLayout orientation="horizontal" marginTop="50">
+            <Label text="Rounds counter:"></Label>
+            <Label [text]="roundsCounter"></Label>
+        </StackLayout>
+        <StackLayout orientation="horizontal" class="">
+            <Label text="Wins counter:"></Label>
+            <Label [text]="winsCounter"></Label>
+        </StackLayout>
+    </StackLayout>
+
+</DockLayout>

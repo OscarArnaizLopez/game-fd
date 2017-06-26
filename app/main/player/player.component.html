@@ -1,0 +1,5 @@
+<StackLayout #playerFrame class="player-container" (tap)="onTapPlayer()" opacity="0">
+    <Image #imagePlayer class="player-avatar-image" stretch="aspectFill"></Image>
+    <Label [text]="player.first_name + ' ' + player.last_name" class="player-name"></Label>
+    <Label [text]="player.fppg.toFixed(2)" class="player-name" *ngIf="!getOpenToBet()"></Label>
+</StackLayout>

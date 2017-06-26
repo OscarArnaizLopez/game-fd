@@ -1,0 +1,21 @@
+.player-container {
+    width: 170;
+    height: 220;
+    border-radius: 6;
+    border-color: #FFF;
+    border-width: 4;
+}
+
+.player-avatar-image {
+    width: 150;
+    height: 150;
+    padding-left: 10;
+    padding-right: 10;
+    border-radius: 4;
+}
+
+.player-name {
+    font-size: 16;
+    horizontal-align: center;
+    margin-top: 10;
+}

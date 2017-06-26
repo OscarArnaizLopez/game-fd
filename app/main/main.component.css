@@ -1,0 +1,46 @@
+.main-container {
+    height: 100%;
+    width: 100%;
+}
+
+.top-container {
+    margin-top: 0;
+    height: 500;
+    width: 100%;
+    horizontal-align: center;
+}
+
+.bottom-container {
+    bottom: 0;
+    margin-bottom: 0
+}
+
+.players-frame {
+    horizontal-align: center;
+}
+
+.rest-btn-frame {
+    margin-top: 20;
+    horizontal-align: center;
+}
+
+.reset-btn {
+    margin-top: 20;
+    background-color: #268bff;
+    color: #FFF;
+    width: 150;
+    height: 50;
+    font-size: 20;
+    border-radius: 4;
+    padding-left: 10;
+    padding-right: 10;
+}
+
+Label {
+    horizontal-align: center;
+}
+
+.resul-lbl {
+    margin-top: 10;
+    font-size: 25;
+}
