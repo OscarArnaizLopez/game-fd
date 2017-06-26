@@ -7,6 +7,9 @@
     "id": "org.nativescript.gamefd",
     "tns-ios": {
       "version": "3.1.0"
+    },
+    "tns-android": {
+      "version": "3.1.0"
     }
   },
   "dependencies": {
@@ -29,10 +32,14 @@
   },
   "devDependencies": {
     "@types/jasmine": "^2.5.53",
+    "babel-traverse": "6.25.0",
+    "babel-types": "6.25.0",
+    "babylon": "6.17.4",
     "jasmine-core": "^2.6.4",
     "karma": "^1.7.0",
     "karma-jasmine": "^1.1.0",
     "karma-nativescript-launcher": "^0.4.0",
+    "lazy": "1.0.11",
     "nativescript-dev-typescript": "~0.4.0",
     "typescript": "~2.2.1"
   }
